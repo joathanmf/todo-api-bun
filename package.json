@@ -1,0 +1,25 @@
+{
+  "name": "todo-api-bun",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch run ./src/index.ts",
+    "start": "bun run ./src/index.ts",
+    "db:generate": "bun drizzle-kit generate",
+    "db:migrate": "bun run ./src/db/migrate.ts",
+    "db:studio": "bun drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.5"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.40.0",
+    "pg": "^8.13.3"
+  }
+}
