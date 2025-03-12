@@ -8,6 +8,7 @@
     "start": "bun run ./src/index.ts",
     "db:generate": "bun drizzle-kit generate",
     "db:migrate": "bun run ./src/db/migrate.ts",
+    "db:setup": "bun run db:generate && bun run db:migrate",
     "db:studio": "bun drizzle-kit studio"
   },
   "devDependencies": {
