@@ -1,17 +1,15 @@
 # todo-api-bun
 
-Api para cadastro e listagem de tarefas com o objetivo de aprender Bun, drizzle entre outras tecnologias.
+Api para cadastro e listagem de tarefas com o objetivo de aprender e utilizar Bun
 
-To install dependencies:
+Tecnologias usadas:
+- Bun (1.2.4)
+- Drizzle ORM
+- Postgres
+- Nginx
+- Docker
+- Typescript
 
 ```bash
-bun install
+bun install && bun run build && bun run start
 ```
-
-To run:
-
-```bash
-bun run start
-```
-
-This project was created using `bun init` in bun v1.2.4. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
