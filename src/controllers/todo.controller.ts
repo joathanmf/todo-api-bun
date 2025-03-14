@@ -31,7 +31,7 @@ export class TodoController {
         description: body.description,
         ...(body.dueDate && { dueDate: new Date(body.dueDate) }),
       };
-      
+
       const result = await todoService.create(todoData);
 
       if (result) {
@@ -47,7 +47,7 @@ export class TodoController {
 
       return Response.json(
         { error: "Failed to create todo", details: errorMessage },
-        { status: 400 }
+        { status: 400 },
       );
     }
   }

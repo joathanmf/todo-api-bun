@@ -1,9 +1,11 @@
 services:
   postgres:
-    image: postgres:16
+    image: postgres
     ports:
       - "5432:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: todos_db
+      MAX_CONNECTIONS: 200
+      SHARED_BUFFERS: 4GB

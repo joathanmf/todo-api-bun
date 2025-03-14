@@ -8,12 +8,10 @@ export class TodoService {
 
   // TODO: Criar tipo para o todoData
   async create(todoData: any) {
-    const result = await db.insert(todos)
-      .values(todoData)
-      .returning();
-    
+    const result = await db.insert(todos).values(todoData).returning();
+
     return result.length === 1 ? result[0] : null;
   }
 }
 
-export const todoService = new TodoService(); 
+export const todoService = new TodoService();

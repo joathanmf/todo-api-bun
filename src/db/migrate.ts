@@ -14,12 +14,12 @@ const main = async () => {
     const db = drizzle(client);
     await migrate(db, { migrationsFolder: "./src/db/migrations" });
     await client.end();
-    
+
     console.log("Migration completed");
   } catch (error) {
     console.error(error);
     throw new Error("Failed to migrate database");
   }
-}
+};
 
 main();

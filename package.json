@@ -9,12 +9,24 @@
     "db:generate": "bun drizzle-kit generate",
     "db:migrate": "bun run ./src/db/migrate.ts",
     "db:setup": "bun run db:generate && bun run db:migrate",
-    "db:studio": "bun drizzle-kit studio"
+    "db:studio": "bun drizzle-kit studio",
+    "code:fix": "eslint --fix --ext .js,.mjs,.ts .",
+    "code:format": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "devDependencies": {
+    "@eslint/js": "^9.22.0",
     "@types/bun": "latest",
     "@types/pg": "^8.11.11",
-    "drizzle-kit": "^0.30.5"
+    "drizzle-kit": "^0.30.5",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.0.0",
+    "install": "^0.13.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.26.1"
   },
   "peerDependencies": {
     "typescript": "^5"
