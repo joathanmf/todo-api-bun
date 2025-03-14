@@ -1,4 +1,4 @@
-# todo-api-bun
+# Todo API Bun
 
 Api para cadastro e listagem de tarefas com o objetivo de aprender e utilizar Bun
 
@@ -10,6 +10,15 @@ Tecnologias usadas:
 - Docker
 - Typescript
 
+Para instalar as dependências
 ```bash
-bun install && bun run build && bun run start
+bun install
+```
+Para configurar o banco de dados
+```bash
+bun run db:setup
+```
+Para rodar o projeto
+```bash
+bun run dev
 ```
